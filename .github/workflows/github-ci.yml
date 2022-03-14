@@ -35,7 +35,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
   deploy:
-    runs-on:
+    runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
         - name: Deploy the application
