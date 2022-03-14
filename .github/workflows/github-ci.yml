@@ -35,6 +35,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
   deploy:
-    steps:
-      - name: Deploy the application
-        run: echo deploy the application
+    build:
+      runs-on:
+        steps:
+          - name: Deploy the application
+            run: echo deploy the application
