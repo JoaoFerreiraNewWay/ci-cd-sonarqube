@@ -34,10 +34,10 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-  deploy:
-    build:
-      runs-on:
-        steps:
-          - uses: actions/checkout@v2
-          - name: Deploy the application
-            run: echo deploy the application
+deploy:
+  build:
+    runs-on:
+      steps:
+        - uses: actions/checkout@v2
+        - name: Deploy the application
+          run: echo deploy the application
